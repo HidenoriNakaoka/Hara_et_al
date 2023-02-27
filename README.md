@@ -54,10 +54,10 @@ $$
 By taking derivative of $k$ and setting it to $0$, we obtain
 
 
+$$
+ x=(\frac{b-2}{a^2b^2(2b-1)})^{1/(2b-2)}
+$$
 
-$$
-x=(\frac{b-2}{a^2b^2(2b-1)})^{1/(2b-2)}
-$$
 , where the curvature takes the maximum value. In the macro, maxCurvature_power(a,b) function computes the value of $x$.
 
 ### 3. (Optional) "MakePointImageMacro.ijm" 
