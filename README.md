@@ -44,11 +44,18 @@ $$
 
 , where $y$ is the number of RAD51 foci in a nucleus, and $x$ is prominence.
 
-Curvature is defined as
+Curvature $k$ is defined as
 
 
 $$
-k=\frac{d^2 y/dx^2}{sqrt(1+(dy/dx)^2)^3}
+k=\frac{d^2 y/dx^2}{\sqrt(1+(dy/dx)^2)^3}
+$$
+
+By taking derivative of $k$, we obtain
+
+
+$$
+x=(\frac{b-2}{a^2b^2(2b-1)})^{1/(2b-2)}
 $$
 
 ### 3. (Optional) "MakePointImageMacro.ijm" 
