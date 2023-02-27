@@ -37,9 +37,11 @@ The main output of the macor is "FociList.txt", where the following information 
 
 * Strictly speking, a log-log plot is used for curve fitting.
 
+
 $$ 
 \ln{y} = a + b^{\ln{x}}
 $$
+
 , where $y$ is the number of RAD51 foci in a nucleus, and $x$ is prominence.
 
 ### 3. (Optional) "MakePointImageMacro.ijm" 
