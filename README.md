@@ -13,4 +13,4 @@ Other possible modifications are...
 </ul>
 
 This macro generates a RoiSet.zip file that stores information about the position and the shape of the nuclei,
-and alos a set of black/white binary images for the identified nuclei.
+and a set of black/white binary images for the identified nuclei.
