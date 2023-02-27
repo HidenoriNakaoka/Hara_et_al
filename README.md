@@ -55,7 +55,7 @@ By taking derivative of $k$ and setting it to $0$, we obtain
 
 
 $$
- x=(\frac{b-2}{a^2b^2(2b-1)})^{1/(2b-2)}
+ x=\left(\frac{b-2}{a^2b^2(2b-1)}\right)^{1/(2b-2)}
 $$
 
 , where the curvature takes the maximum value. In the macro, <i>maxCurvature_power(a,b)</i> function computes the value of $x$.
