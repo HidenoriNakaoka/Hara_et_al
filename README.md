@@ -38,8 +38,9 @@ The main output of the macor is "FociList.txt", where the following information 
 * Strictly speking, a log-log plot is used for curve fitting.
 
 $$ 
-log(y) = a + b^{log(x)}
+\log(y) = a + b^{\log(x)}
 $$
+, where $y$ is the number of RAD51 foci in a nucleus, and $x$ is prominence.
 
 ### 3. (Optional) "MakePointImageMacro.ijm" 
 This macro creates a set of black/white binary images, where RAD51 foci are white and the background are black. This is to visualize all the identified RAD51 foci, and totally optional. The images generated in this macro were not used for data analyses.
