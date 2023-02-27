@@ -58,7 +58,7 @@ $$
  x=(\frac{b-2}{a^2b^2(2b-1)})^{1/(2b-2)}
 $$
 
-, where the curvature takes the maximum value. In the macro, maxCurvature_power(a,b) function computes the value of $x$.
+, where the curvature takes the maximum value. In the macro, <i>maxCurvature_power(a,b)</i> function computes the value of $x$.
 
 ### 3. (Optional) "MakePointImageMacro.ijm" 
 This macro creates a set of black/white binary images, where RAD51 foci are white and the background are black. This is to visualize all the identified RAD51 foci, and totally optional. The images generated in this macro were not used for data analyses.
