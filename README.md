@@ -44,7 +44,7 @@ $$
 
 , where $y$ is the number of RAD51 foci in a nucleus, and $x$ is prominence.
 
-Curvature $k$ of a curve ( $y=f(x)$ )is defined as follows.
+Curvature $k$ of a curve ( $y=f(x)$ ) is defined as follows.
 
 
 $$
