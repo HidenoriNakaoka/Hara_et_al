@@ -5,6 +5,7 @@ The set of macros assumes that we have separate images for nuclei (DAPI) and RAD
 Multiple images of the same channel are imported as an image sequence.
 
 1. Run "BinarizationMacro.ijm" with appropriate modifications of paths where images are stored/saved (in lines 53 and 54).
+
 Also, you might have to make "Bin" directory before running the macro (See line 53).
 Other possible modifications are...
 <ul>
