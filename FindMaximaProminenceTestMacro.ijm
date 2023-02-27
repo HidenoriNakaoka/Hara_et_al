@@ -42,16 +42,10 @@ for(i=0; i<nSlices; i++){
 		y_array_ln[p] = log(m);
 	}
 
-// Fitting to Exponential function
-//	Fit.doFit("y = a*exp(b*x)", x_array, y_array); // Prominence v.s. Maxima count can be empirically fit by an exponential function.   	
-//  	prom = minimalCurvature(Fit.p(0),Fit.p(1));
-//  	prominence_array[i] = prom;
-//  	a_array[i] = Fit.p(0);
-//  	b_array[i] = Fit.p(1);
 
 // Fitting to Power function
 	Fit.doFit("y = a+b*x", x_array_ln, y_array_ln);
-	prom = minimalCurvature_power(Fit.p(0),Fit.p(1));
+	prom = maxCurvature_power(Fit.p(0),Fit.p(1));
   	prominence_array[i] = prom;
   	a_array[i] = exp(Fit.p(0));
   	b_array[i] = Fit.p(1);
@@ -118,12 +112,7 @@ function getMaximaNumber(s, p){
 	return count;
 }
 
-function minimalCurvature(a,b){
-	// For Exponential function
-	return (log(2/a/a/b/b))/(2*b);
-}
-
-function minimalCurvature_power(a,b){
+function maxCurvature_power(a,b){
 	// For Power function
 	a_ = exp(a);
 	b_ = b;
