@@ -19,3 +19,16 @@ and a set of black/white binary images for the identified nuclei.
 2. Run "FindMaximaProminenceTestMacro.ijm" with appropriate modifications of paths where images are stored/saved (in lines 9, 10, 11, 62, 70, 102).
 
 This macro uses "Find Maxima" built-in function of ImageJ to identify RAD51 foci within nuclei. The Find Maxima function has a parameter called "prominence", whose value greatly affects the number of identified maxima (i.e. RAD51 foci). The macro systematically analyze the number of maxima for various values of the prominence parameter. In general, the number of maxima is a monotonically decreasing function of prominence that can be nicely fit by a power function. In each nucleus, a prominence value at which the curvature of the prominece-maxima curve shows the minimal value of its curvature is heuristically chosen as "the best prominence value". Note that the minimal curvature point can be mathematically derived and computed once the fitting parameters for the power function are determined (implemented in minimalCUrvature_power() function).
+
+The main output of the macor is "FociList.txt", where the following information is stored.
+<ul>
+  <li>#ROI : ROI ID</li>
+  <li>Slice : Slice numbe in an image sequence</li>
+  <li>X : x-coordinate of a RAD51 focus</li>
+  <li>Y : y-coordinate of a RAD51 focus</li>
+  <li>pixelvalue : max fluorescence intensity (a.u.) of a RAD51 focus</li>
+  <li>mode : mode Cy5 (RAD51) fluorescence value within a nucleus analyzed</li>
+  <li>prominence : the best prominence parameter value for a nucleus</li>
+  <li>isFocus : 1:considered to be a RAD51 focus. 0: neglected </li>
+  <li>TotalFociPerNucleus : the numbe of total RAD51 foci within a nucleus</li>
+</ul>
