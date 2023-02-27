@@ -39,10 +39,17 @@ The main output of the macor is "FociList.txt", where the following information 
 
 
 $$ 
-\ln{y} = a + b\ln{x}
+\ln{y} = \ln a + b\ln{x}
 $$
 
 , where $y$ is the number of RAD51 foci in a nucleus, and $x$ is prominence.
+
+Curvature is defined as
+
+
+$$
+k=\frac{d^2 y/dx^2}{sqrt(1+(dy/dx)^2)^3}
+$$
 
 ### 3. (Optional) "MakePointImageMacro.ijm" 
 This macro creates a set of black/white binary images, where RAD51 foci are white and the background are black. This is to visualize all the identified RAD51 foci, and totally optional. The images generated in this macro were not used for data analyses.
