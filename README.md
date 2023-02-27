@@ -51,7 +51,7 @@ $$
 k=\frac{d^2 y/dx^2}{\sqrt{1+(dy/dx)^2}^3}
 $$
 
-By taking derivative of $k$ and setting it to $0$, we obtain
+By taking derivative of $k$ and setting it to $0$, we obtain (for a power function: $y=a x^b$)
 
 
 $$
