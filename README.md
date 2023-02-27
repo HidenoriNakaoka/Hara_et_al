@@ -17,4 +17,5 @@ This macro generates a RoiSet.zip file that stores information about the positio
 and a set of black/white binary images for the identified nuclei.
 
 2. Run "FindMaximaProminenceTestMacro.ijm" with appropriate modifications of paths where images are stored/saved (in lines 9, 10, 11, 62, 70, 102).
+
 This macro uses "Find Maxima" built-in function of ImageJ to identify RAD51 foci within nuclei. The Find Maxima function has a parameter called "prominence", whose value greatly affects the number of identified maxima (i.e. RAD51 foci). The macro systematically analyze the number of maxima for various values of the prominence parameter. In general, the number of maxima is a monotonically decreasing function of prominence. Then, the graph of the function is fit by a power function. A prominence value at which the curvature of the prominece-maxima curve shows the minimal value of its curvature is heuristically chosen as "the best prominence value". The "best prominence value" is determined in every nucleus.
