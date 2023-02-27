@@ -64,3 +64,7 @@ $$
 This macro creates a set of black/white binary images, where RAD51 foci are white and the background are black. This is to visualize all the identified RAD51 foci, and totally optional. The images generated in this macro were not used for data analyses.
 
 The new image size specified in line 1 might be modifeid depending on your image size. Also, paths must be appropriately re-written in lines 2 and 19.
+
+
+### 4. (Optional) "MeasurementMacro.ijm" 
+This macro measures fluorescence intensity of each channel (EdU, DAPI, and Cy5) and output the results as MeasurementResults.txt. The procedures are highly experiment-specific, and thus might not be appropriate for general analysis purposes. We made it public just for reference.
