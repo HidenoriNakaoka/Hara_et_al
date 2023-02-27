@@ -1,5 +1,5 @@
 # Hara_et_al
-## ImageJ macros for counting nuclear foci
+## ImageJ macros for counting RAD51 nuclear foci
 
 The set of macros assumes that we have separate images for nuclei (DAPI) and RAD51 nuclear foci (Cy5).
 Multiple images of the same channel are imported as an image sequence.
