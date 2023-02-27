@@ -38,7 +38,7 @@ The main output of the macor is "FociList.txt", where the following information 
 * Strictly speking, a log-log plot is used for curve fitting.
 
 $$ 
-\log y = a + b^{\log x}
+\ln{y} = a + b^{\ln{x}}
 $$
 , where $y$ is the number of RAD51 foci in a nucleus, and $x$ is prominence.
 
