@@ -20,7 +20,7 @@ and a set of black/white binary images for the identified nuclei.
 ### 2. "FindMaximaProminenceTestMacro.ijm"
 
 This is the main macro that implements the algorithms for detecting RAD51 foci. Must be run with appropriate modifications of paths where images are stored/saved (in lines 9, 10, 11, 62, 70, 102).
-This macro uses "Find Maxima" built-in function of ImageJ to identify RAD51 foci within nuclei. The Find Maxima function has a parameter called "prominence", whose value greatly affects the number of identified maxima (i.e. RAD51 foci). The macro systematically analyze the number of maxima for various values of the prominence parameter. In general, the number of maxima is a monotonically decreasing function of prominence that can be nicely fit by a power function*. In each nucleus, a prominence value at which the curvature of the prominece-maxima curve shows the minimal value of its curvature is heuristically chosen as "the best prominence value". Note that the minimal curvature point can be mathematically derived and computed once the fitting parameters for the power function are determined (implemented in minimalCUrvature_power() function).
+This macro uses "Find Maxima" built-in function of ImageJ to identify RAD51 foci within nuclei. The Find Maxima function has a parameter called "prominence", whose value greatly affects the number of identified maxima (i.e. RAD51 foci). The macro systematically analyze the number of maxima for various values of the prominence parameter. In general, the number of maxima is a monotonically decreasing function of prominence that can be nicely fit by a power function\*. In each nucleus, a prominence value at which the curvature of the prominece-maxima curve shows the minimal value of its curvature is heuristically chosen as "the best prominence value". Note that the minimal curvature point can be mathematically derived and computed once the fitting parameters for the power function are determined (implemented in minimalCUrvature_power() function).
 
 The main output of the macor is "FociList.txt", where the following information is stored.
 <ul>
@@ -35,7 +35,7 @@ The main output of the macor is "FociList.txt", where the following information 
   <li>TotalFociPerNucleus : the numbe of total RAD51 foci within a nucleus</li>
 </ul>
 
-* Strictly speking, a log-log plot is used for curve fitting.
+\* Strictly speking, a log-log plot is used for curve fitting.
 
 
 $$ 
