@@ -32,3 +32,8 @@ The main output of the macor is "FociList.txt", where the following information 
   <li>isFocus : 1:considered to be a RAD51 focus. 0: neglected </li>
   <li>TotalFociPerNucleus : the numbe of total RAD51 foci within a nucleus</li>
 </ul>
+
+
+3. (Optional) "MakePointImageMacro.ijm" creates a set of black/white binary images, where RAD51 foci are white and the background are black. This is to visualize all the identified RAD51 foci, and totally optional. The images generated in this macro were not used for data analyses.
+
+The new image size specified in line 1 might be modifeid depending on your image size. Also, paths must be appropriately re-written in lines 2 and 19.
