@@ -39,7 +39,7 @@ The main output of the macor is "FociList.txt", where the following information 
 
 
 $$ 
-\ln{y} = a + b^{\ln{x}}
+\ln{y} = a + b\ln{x}
 $$
 
 , where $y$ is the number of RAD51 foci in a nucleus, and $x$ is prominence.
