@@ -51,12 +51,13 @@ $$
 k=\frac{d^2 y/dx^2}{\sqrt(1+(dy/dx)^2)^3}
 $$
 
-By taking derivative of $k$, we obtain
+By taking derivative of $k$ and setting it to $0$, we obtain
 
 
 $$
 x=(\frac{b-2}{a^2b^2(2b-1)})^{1/(2b-2)}
 $$
+, where the curvature takes the maximum value. In the macro, maxCurvature_power(a,b) function computes the value of $x$.
 
 ### 3. (Optional) "MakePointImageMacro.ijm" 
 This macro creates a set of black/white binary images, where RAD51 foci are white and the background are black. This is to visualize all the identified RAD51 foci, and totally optional. The images generated in this macro were not used for data analyses.
