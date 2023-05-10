@@ -1,0 +1,38 @@
+> ad.test(u1, u2, method = "exact", dist = FALSE, Nsim = 1000)
+
+ Anderson-Darling k-sample test.
+
+Number of samples:  2
+Sample sizes:  208, 208
+Number of ties: 272
+
+Mean of  Anderson-Darling  Criterion: 1
+Standard deviation of  Anderson-Darling  Criterion: 0.75789
+
+T.AD = ( Anderson-Darling  Criterion - mean)/sigma
+
+Null Hypothesis: All samples come from a common population.
+
+Based on Nsim = 1000 simulations
+
+              AD  T.AD  asympt. P-value  sim. P-value
+version 1: 4.619 4.775         0.004323         0.001
+version 2: 4.570 4.707         0.004594         0.001
+
+
+
+> ks2Test(u1, u2)
+
+Title:
+ Kolmogorov-Smirnov Two Sample Test
+
+Test Results:
+  STATISTIC:
+    D | Two Sided: 0.1346
+       D^- | Less: 0.1202
+    D^+ | Greater: 0.1346
+  P VALUE:
+    Alternative       Two-Sided: 0.04614 
+    Alternative Exact Two-Sided: 0.03481 
+    Alternative            Less: 0.04955 
+    Alternative         Greater: 0.02307 

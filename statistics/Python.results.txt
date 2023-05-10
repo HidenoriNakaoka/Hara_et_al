@@ -1,0 +1,11 @@
+
+Anderson_ksampResult(
+statistic=4.799780851576188, 
+critical_values=array([0.325, 1.226, 1.961, 2.718, 3.752, 4.592, 6.546]), 
+significance_level=0.004095808997779653
+)
+
+KstestResult(
+statistic=0.13804287817445712, 
+pvalue=0.030955635147087403
+)
