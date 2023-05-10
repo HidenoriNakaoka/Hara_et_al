@@ -7,7 +7,7 @@ library(nortest)
 library(kSamples)
 library(fBasics)
 
-data <- read.xlsx("/Users/nakaokahidenori/Documents/Publications/2023_Hara_CST/analysis/NeutralComet.xlsx")
+data <- read.xlsx("Path to NeutralComet.xlsx")
 data <- head(data, -1) # Remove the last row, which contains NA in the 3rd column
 
 u1 <- data$KDctrl_H2O2
