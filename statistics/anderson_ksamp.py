@@ -64,7 +64,7 @@ from scipy import stats
 import pandas as pd
 import math
 
-neutral_comet = "/Users/nakaokahidenori/Documents/Publications/2023_Hara_CST/analysis/NeutralComet.xls"
+neutral_comet = "Path to NeutralComet.xls"
 
 df = pd.read_excel(neutral_comet)
 
