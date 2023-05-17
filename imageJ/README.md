@@ -54,7 +54,7 @@ $$
 The identified Rad51 foci locations are visualized in black/white images, where a Rad51 focus is represented by a single whitepixel, and stored in *Point* directory.
 
 ### 4. "AnalyzeRad51Foci.groovy" 
-The main output of the macor is "FociList.txt", where the following information is stored.
+The main output of the macor is *FociList.txt*, where the following information is stored.
 <ul>
   <li>#ROI : ROI ID</li>
   <li>Slice : Slice numbe in an image sequence</li>
@@ -66,6 +66,4 @@ The main output of the macor is "FociList.txt", where the following information 
   <li>Condition : Experimental condition</li>
 </ul>
 
-
-### 4. (Optional) "MeasurementMacro.ijm" 
-This macro measures fluorescence intensity of each channel (EdU, DAPI, and Cy5) and output the results as MeasurementResults.txt. The procedures are highly experiment-specific, and thus might not be appropriate for general analysis purposes. We made it public just for reference.
+It also generates *SimpleFociList.txt*, a re-organized version of *FociList.txt* to make plotting the data easier. Note that a column called "FociPerCellNoise" is added, where we add a random noise {-0.5, 0, 0.5} to "FociPerCell". These figures are used in jitter plots for better visualization.
