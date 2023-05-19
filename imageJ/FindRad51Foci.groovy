@@ -100,7 +100,7 @@ while(prom<=p.max){
 	for(int i=0; i<dim[3]; i++){
 		ImageProcessor ip = stk.getProcessor(i+1);
 		// COUNT of maxima is printed on ResultTable
-		mf.findMaxima(ip, prom.asType(float), ImageProcessor.NO_THRESHOLD, MaximumFinder.COUNT, false, true);
+		mf.findMaxima(ip, prom.asType(float), ImageProcessor.NO_THRESHOLD, MaximumFinder.COUNT, false, false);
 	}
 	// Reorganize ResultsTable
 	ResultsTable rt = new ResultsTable();
@@ -139,11 +139,13 @@ bufferedWriter.close();
 // Apply the determined prominence to imp3 and save the output
 ImagePlus imp4 = IJ.createImage("Point", "8-bit black", dim[0], dim[1], dim[3]); // Image sequence for maxima point images
 ImageStack stk4 = imp4.getImageStack();
+
 for(int i=0; i<dim[3]; i++){
 	ImageProcessor ip = stk.getProcessor(i+1);
-	point = mf.findMaxima(ip, prom_determined.asType(float), ImageProcessor.NO_THRESHOLD, MaximumFinder.SINGLE_POINTS, false, true);
+	point = mf.findMaxima(ip, prom_determined.asType(float), ImageProcessor.NO_THRESHOLD, MaximumFinder.SINGLE_POINTS, false, false);
 	stk4.setProcessor(point, i+1);
 }
+
 IJ.run(imp4, "Image Sequence... ", "format=TIFF save="+parentPath+"/Point");
 
 // Close all iamges
