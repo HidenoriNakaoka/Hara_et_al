@@ -61,7 +61,7 @@ plot DATA using ($3>1000 && strcol(6) eq "Ctrl" ? (1) : 1/0):5 with points pt 6 
 DATA = ROOT."FociList.txt"
 set output ROOT."FociFluorescenceDist.eps"
 set ylabel "Rad51 foci fluorescence / a.u."
-set jitter overlap 1.0 spread 1.0 swarm
+set jitter overlap 1.0 spread 1.0
 plot DATA using ($3>1000 && strcol(8) eq "Ctrl" ? (1) : 1/0):6 with points pt 6 ps 1 lc rgb GINNEZUMI,\
 "" using ($3>1000 && strcol(8) eq "Ctrl_H2O2" ? (2) : 1/0):6 with points pt 6 ps 1 lc rgb ASAGI,\
 "" using ($3>1000 && strcol(8) eq "shSTN1" ? (3) : 1/0):6 with points pt 6 ps 1 lc rgb GINNEZUMI,\
